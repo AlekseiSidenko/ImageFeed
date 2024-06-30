@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vey-pf-bBE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y8y-I0-wBr">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -82,6 +82,7 @@
                             <constraint firstAttribute="bottom" secondItem="jSa-6s-vUM" secondAttribute="bottom" id="sC4-Qw-Rop"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="hRf-5h-8zJ"/>
                     <connections>
                         <outlet property="tableView" destination="jSa-6s-vUM" id="IJw-6U-56W"/>
                     </connections>
@@ -163,16 +164,39 @@
                             <constraint firstItem="JI1-Sc-ohm" firstAttribute="trailing" secondItem="Qlh-CL-ab1" secondAttribute="trailing" constant="24" id="t5U-0z-qtR"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="I1V-pq-Cpc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlh-CP-vOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-918.1395348837209" y="-80.472103004291853"/>
+            <point key="canvasLocation" x="75" y="-673"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2qp-71-sBX">
+            <objects>
+                <tabBarController id="y8y-I0-wBr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KKo-Zj-Ylx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="YP Black"/>
+                        <color key="selectedImageTintColor" name="YP White"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kE1-JX-aZF"/>
+                        <segue destination="Vey-pf-bBE" kind="relationship" relationship="viewControllers" id="yJA-Pm-kBY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuK-gG-cgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794" y="-285"/>
         </scene>
     </scenes>
     <resources>
         <image name="0" width="1600" height="1059"/>
         <image name="ProfilePhoto" width="70" height="70"/>
         <image name="favoritesActive" width="42" height="42"/>
+        <image name="tab_editorial_active" width="30" height="30"/>
+        <image name="tab_profile_active" width="30" height="30"/>
         <image name="userLogout" width="24" height="24"/>
         <namedColor name="YP Black">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
